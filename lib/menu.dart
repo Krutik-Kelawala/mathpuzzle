@@ -103,7 +103,7 @@ class _menuState extends State<menu> {
 
   _createFolder() async {
     final folderName = "Screenshot";
-    final path1 = Directory("storage/emulated/0/DCIM/$folderName");
+    final path1 = Directory("storage/emulated/0/$folderName");
     if ((await path1.exists())) {
       // TODO:
       print("exist");
